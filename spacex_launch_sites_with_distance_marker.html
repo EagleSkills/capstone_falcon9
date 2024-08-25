@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_06f7c81480745283cd8c9ef7d370a8c4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_06f7c81480745283cd8c9ef7d370a8c4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_06f7c81480745283cd8c9ef7d370a8c4 = L.map(
+                "map_06f7c81480745283cd8c9ef7d370a8c4",
+                {
+                    center: [29.559684888503615, -95.0830971930759],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89fe15e479cae9a01ff00443511a9f2d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_89fe15e479cae9a01ff00443511a9f2d.addTo(map_06f7c81480745283cd8c9ef7d370a8c4);
+        
+    
+            var marker_47dd0d9aa3a2229c197f849675c97854 = L.marker(
+                [29.559684888503615, -95.0830971930759],
+                {}
+            ).addTo(map_06f7c81480745283cd8c9ef7d370a8c4);
+        
+    
+            var div_icon_ac70d219358dfb985ce086b103b6dc85 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12; color:#d35400;\"\u003e\u003cb\u003eNASA JSC\u003c/b\u003e\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [20, 20]});
+            marker_47dd0d9aa3a2229c197f849675c97854.setIcon(div_icon_ac70d219358dfb985ce086b103b6dc85);
+        
+    
+        var popup_24d0ff5146b749f04bd39d455e34d8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da81cbd16e849e0966f7bf6c50284b28 = $(`<div id="html_da81cbd16e849e0966f7bf6c50284b28" style="width: 100.0%; height: 100.0%;">NASA Johnson Space Center</div>`)[0];
+                popup_24d0ff5146b749f04bd39d455e34d8b7.setContent(html_da81cbd16e849e0966f7bf6c50284b28);
+            
+        
+
+        marker_47dd0d9aa3a2229c197f849675c97854.bindPopup(popup_24d0ff5146b749f04bd39d455e34d8b7)
+        ;
+
+        
+    
+    
+            var marker_975cb364bc497af626a3f0612c6cf6fa = L.marker(
+                [28.56367, -80.57163],
+                {}
+            ).addTo(map_06f7c81480745283cd8c9ef7d370a8c4);
+        
+    
+            var icon_0cf2ebf55ca51542b574dc1c08979396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_975cb364bc497af626a3f0612c6cf6fa.setIcon(icon_0cf2ebf55ca51542b574dc1c08979396);
+        
+    
+        var popup_b799ccae2a4b2ec15d4db5e18f286117 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6daebda7dfe73e39e3285067e2b91c8c = $(`<div id="html_6daebda7dfe73e39e3285067e2b91c8c" style="width: 100.0%; height: 100.0%;">Closest Coastline Point</div>`)[0];
+                popup_b799ccae2a4b2ec15d4db5e18f286117.setContent(html_6daebda7dfe73e39e3285067e2b91c8c);
+            
+        
+
+        marker_975cb364bc497af626a3f0612c6cf6fa.bindPopup(popup_b799ccae2a4b2ec15d4db5e18f286117)
+        ;
+
+        
+    
+    
+            var marker_0d07fbd2eb8dec345370b361dcf661f9 = L.marker(
+                [28.56367, -80.57163],
+                {}
+            ).addTo(map_06f7c81480745283cd8c9ef7d370a8c4);
+        
+    
+            var div_icon_74f35f14f110fbda089a57c970ba9cbb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color:#d35400;\"\u003e\u003cb\u003eDistance: 1414.31 KM\u003c/b\u003e\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [250, 36]});
+            marker_0d07fbd2eb8dec345370b361dcf661f9.setIcon(div_icon_74f35f14f110fbda089a57c970ba9cbb);
+        
+    
+            var mouse_position_21a4354fcb5371eb08380c20a5c8eb9b = new L.Control.MousePosition(
+                {"emptyString": "NaN", "lngFirst": false, "numDigits": 5, "position": "topright", "prefix": "Lat:", "separator": " Long: "}
+            );
+            mouse_position_21a4354fcb5371eb08380c20a5c8eb9b.options["latFormatter"] =
+                function(num) {return L.Util.formatNum(num, 5);};;
+            mouse_position_21a4354fcb5371eb08380c20a5c8eb9b.options["lngFormatter"] =
+                function(num) {return L.Util.formatNum(num, 5);};;
+            map_06f7c81480745283cd8c9ef7d370a8c4.addControl(mouse_position_21a4354fcb5371eb08380c20a5c8eb9b);
+        
+</script>
+</html>
